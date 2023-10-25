@@ -1,9 +1,6 @@
 package com.example.demo.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -23,5 +20,11 @@ public class LigneVenteEntity extends AbstractEntity{
     @JoinColumn(name = "idVente")
     private VenteEntity vente;
 
+
+    @Column(name = "quantite")
     private BigDecimal quantite;
+
+
+    @Column(name = "prixunitaire")
+    private BigDecimal prixUnitaire;
 }
