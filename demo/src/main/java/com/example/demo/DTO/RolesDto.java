@@ -7,6 +7,9 @@ import lombok.Data;
 @Builder
 
 public class RolesDto {
+
+    private Integer id;
+
     private String rolename;
 
     private UtilisateurDto utilisateur;

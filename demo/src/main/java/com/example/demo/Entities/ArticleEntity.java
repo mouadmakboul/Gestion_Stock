@@ -5,12 +5,12 @@ import lombok.*;
 import lombok.extern.apachecommons.CommonsLog;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Builder
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "Article")
 
@@ -37,5 +37,8 @@ public class ArticleEntity extends AbstractEntity{
     @ManyToOne
     @JoinColumn(name = "idCategory")
     private CategoryEntity Category;
+
+    @OneToMany(mappedBy = "article")
+    private List<LigneVenteEntity> ligneventes;
 
 }

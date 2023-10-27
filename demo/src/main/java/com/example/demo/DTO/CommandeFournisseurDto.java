@@ -13,6 +13,8 @@ import java.util.List;
 
 public class CommandeFournisseurDto {
 
+    private Integer id;
+
     private String code;
 
 
@@ -26,5 +28,4 @@ public class CommandeFournisseurDto {
     private List<LigneCommandeFourniseurDto> ligneCommandeFournisseurs;
 
 
-    private EntrepriseDto entreprise;
 }

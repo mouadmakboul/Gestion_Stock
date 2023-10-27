@@ -9,7 +9,8 @@ import lombok.*;
 import java.util.List;
 
 @Data
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "Category")
@@ -21,7 +22,7 @@ public class CategoryEntity extends AbstractEntity {
     private String code;
 
     @Column(name = "designation")
-    private String Designation;
+    private String designation;
 
     @OneToMany(mappedBy = "Category")
     private List<ArticleEntity> articles;

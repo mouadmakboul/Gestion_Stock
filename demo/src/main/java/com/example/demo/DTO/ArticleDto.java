@@ -11,6 +11,8 @@ import java.math.BigDecimal;
 
 public class ArticleDto {
 
+    private Integer id;
+
     private String codeArticle;
 
 
@@ -30,5 +32,5 @@ public class ArticleDto {
 
 
 
-    private CategoryEntity Category;
+    private CategoryDto Category;
 }

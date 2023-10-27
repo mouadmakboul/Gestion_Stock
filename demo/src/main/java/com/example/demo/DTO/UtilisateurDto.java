@@ -10,6 +10,9 @@ import java.util.List;
 @Builder
 
 public class UtilisateurDto {
+
+    private Integer id;
+
     private String nom;
 
 
@@ -25,7 +28,7 @@ public class UtilisateurDto {
     private String motDePasse;
 
 
-    private AdresseEntity adresse;
+    private AdresseDto adresse;
 
 
     private String photo;

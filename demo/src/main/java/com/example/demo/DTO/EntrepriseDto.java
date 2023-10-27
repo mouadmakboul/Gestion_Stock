@@ -12,6 +12,8 @@ import java.util.List;
 
 public class EntrepriseDto {
 
+    private Integer id;
+
     private String nom;
 
 

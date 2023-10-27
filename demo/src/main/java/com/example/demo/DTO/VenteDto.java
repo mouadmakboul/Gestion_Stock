@@ -10,6 +10,9 @@ import java.time.Instant;
 @Builder
 
 public class VenteDto {
+
+    private Integer id;
+
     private String code;
 
     private Instant dateVente;

@@ -16,6 +16,8 @@ import java.util.List;
 
 public class CommandeClientDto {
 
+    private Integer id;
+
     private String code;
 
 

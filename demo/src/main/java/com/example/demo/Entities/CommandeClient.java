@@ -7,7 +7,6 @@ import java.time.Instant;
 import java.util.List;
 
 @Data
-@Builder
 @Entity
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "CommandeClient")

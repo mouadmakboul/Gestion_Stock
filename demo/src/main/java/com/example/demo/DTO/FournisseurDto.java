@@ -14,6 +14,8 @@ import java.util.List;
 
 public class FournisseurDto {
 
+    private Integer id;
+
     private String nom;
 
 

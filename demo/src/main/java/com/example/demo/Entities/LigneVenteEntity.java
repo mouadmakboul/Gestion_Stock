@@ -6,7 +6,6 @@ import lombok.*;
 import java.math.BigDecimal;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -27,4 +26,8 @@ public class LigneVenteEntity extends AbstractEntity{
 
     @Column(name = "prixunitaire")
     private BigDecimal prixUnitaire;
+
+    @ManyToOne
+    @JoinColumn(name = "idArticle")
+    private ArticleEntity article;
 }

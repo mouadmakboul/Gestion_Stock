@@ -12,7 +12,10 @@ import java.time.Instant;
 @Builder
 
 public class MvtStockDto {
-    private ArticleEntity article;
+
+    private Integer id;
+
+    private ArticleDto article;
 
 
     private Instant dateMvt;
